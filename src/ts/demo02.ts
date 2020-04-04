@@ -22,6 +22,8 @@ let arr:number[] = [11,22,33]//数组中的元素都是number
 let arr_:string[] = ['a','c','v']//数组中的元素都是string
 let arr2:Array<number> = [22,33,44]
 
+let curArr:any[] = ['aa',123]
+
 // 元组类型 , 属于数组的一种
 let arr3:[number,string] = [123,'12'] //可以给数组中每一个位置制定类型
 
