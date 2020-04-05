@@ -102,4 +102,32 @@ md5('姓名','张三') //姓名张三
 
 
 
-//  3、
+//  3、可索引接口-数组、对象的约束
+
+// var arrDemo01:number[] = [1,2]
+
+// var arrDemo02:Array<string> = ['1','2']
+
+interface UserArr{
+    [index:number]:string
+}
+
+var UserArrDemo:UserArr = ['aaa','bbb']
+
+console.log(UserArrDemo[0])
+
+
+interface UserObj{
+    [index:string]:any
+}
+
+var UserObjDemo:UserObj = {
+    name:'name',
+    age:18
+}
+
+
+
+
+
+//  4、类类型接口-对类的约束，和抽象类优点相似

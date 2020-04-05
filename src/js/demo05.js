@@ -53,4 +53,10 @@ var md5 = function (key, value) {
     return key + value;
 };
 md5('姓名', '张三'); //姓名张三
-//  3、
+var UserArrDemo = ['aaa', 'bbb'];
+console.log(UserArrDemo[0]);
+var UserObjDemo = {
+    name: 'name',
+    age: 18
+};
+//  4、类类型接口-对类的约束，和抽象类优点相似
