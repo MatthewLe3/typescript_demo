@@ -152,3 +152,32 @@ class Cat implements Animal{ //不是继承
     }
     eat(food:string){}
 }
+
+
+
+// 5.接口的扩展-接口可以继承接口
+
+interface Animal_{
+    eat():void
+}
+
+interface PersonInter extends Animal_{ //Person_接口，继承了 Animal_接口
+    work():void
+}
+
+class Web implements PersonInter{ //实现接口
+    public name:string;
+    constructor(name:string){
+        this.name = name
+    }
+
+    eat(){
+        console.log('eat')
+    }
+
+    work(){
+        
+    }
+}
+
+

@@ -73,3 +73,14 @@ var Cat = /** @class */ (function () {
     Cat.prototype.eat = function (food) { };
     return Cat;
 }());
+var Web = /** @class */ (function () {
+    function Web(name) {
+        this.name = name;
+    }
+    Web.prototype.eat = function () {
+        console.log('eat');
+    };
+    Web.prototype.work = function () {
+    };
+    return Web;
+}());
