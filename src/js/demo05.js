@@ -49,5 +49,8 @@ ajax({
     data: '',
     dataType: 'json'
 });
-//  2.函数类型接口
+var md5 = function (key, value) {
+    return key + value;
+};
+md5('姓名', '张三'); //姓名张三
 //  3、

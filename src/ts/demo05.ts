@@ -88,6 +88,18 @@ ajax({
 
 
 
-//  2.函数类型接口
+//  2.函数类型接口-对函数传入的参数以及返回值进行约束
+
+//例子 加密的函数类型接口
+interface encrypt{
+    (key:string,value:string):string
+}
+var md5:encrypt = function(key:string,value:string):string{
+    return key + value
+}
+
+md5('姓名','张三') //姓名张三
+
+
 
 //  3、
