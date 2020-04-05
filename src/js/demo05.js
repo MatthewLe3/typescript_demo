@@ -59,4 +59,17 @@ var UserObjDemo = {
     name: 'name',
     age: 18
 };
-//  4、类类型接口-对类的约束，和抽象类优点相似
+var Dog = /** @class */ (function () {
+    function Dog(name) {
+        this.name = name;
+    }
+    Dog.prototype.eat = function () { };
+    return Dog;
+}());
+var Cat = /** @class */ (function () {
+    function Cat(name) {
+        this.name = name;
+    }
+    Cat.prototype.eat = function (food) { };
+    return Cat;
+}());

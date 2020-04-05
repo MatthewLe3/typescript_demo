@@ -131,3 +131,24 @@ var UserObjDemo:UserObj = {
 
 
 //  4、类类型接口-对类的约束，和抽象类优点相似
+
+interface Animal{
+    name:string;
+    eat(val:string):void;
+}
+
+class Dog implements Animal{ //不是继承
+    name:string;
+    constructor(name:string){
+        this.name = name
+    }
+    eat(){}
+}
+
+class Cat implements Animal{ //不是继承
+    name:string;
+    constructor(name:string){
+        this.name = name
+    }
+    eat(food:string){}
+}
