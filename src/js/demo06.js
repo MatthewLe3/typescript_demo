@@ -39,3 +39,7 @@ m.add(4);
 m.add(5);
 m.add(7);
 console.log(m.min());
+var setData = function (value1, value2) {
+    return value1;
+};
+setData('a', 'b');

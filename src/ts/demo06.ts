@@ -49,3 +49,17 @@ m.add(5)
 m.add(7)
 
 console.log(m.min())
+
+
+
+// 泛型接口
+
+interface ConfigFn<T>{
+    (value1:T,value2:T):T;
+}
+
+var setData:ConfigFn<string> = function<T>(value1:T,value2:T):T{
+    return value1
+}
+
+setData('a','b')
